@@ -15,10 +15,10 @@ namespace LabSheet3
         public static void Main(string[] args)
         {
             double depositAmount, withdrawalAmount;
-            BankAccount ba1 = new BankAccount();
-            ba1.AccountName = "Sam";
-            ba1.AccountNumber = 101;
-            ba1.Balance = 35.99;
+            BankAccount ba1 = new BankAccount(101, "Sam", 35.99);
+            //ba1.AccountName = "Sam";
+            //ba1.AccountNumber = 101;
+            //ba1.Balance = 35.99;
 
 
             Console.WriteLine("ba1 info: ");
@@ -30,10 +30,11 @@ namespace LabSheet3
 
 
 
-            BankAccount ba2 = new BankAccount();
-            ba2.AccountName = "John";
-            ba2.AccountNumber = 102;
-            ba2.Balance = 1099.87;
+            BankAccount ba2 = new BankAccount(102, "John", 1099.87);
+            //ba2.AccountName = "John";
+            //ba2.AccountNumber = 102;
+            //ba2.Balance = 1099.87;
+
             Console.WriteLine("ba2 info:  ");
             Console.WriteLine(ba2.AccountName);
             Console.WriteLine(ba2.AccountNumber);
@@ -58,6 +59,15 @@ namespace LabSheet3
 
     public class BankAccount
     {
+
+
+        public BankAccount(int AccountNumber, string AccountName, double Balance)
+        {
+            this.AccountNumber = AccountNumber;
+            this.AccountName = AccountName;
+            this.Balance = Balance;
+        }
+
         private int _accountNumber;
         private string _accountName;
         private double _balance;
@@ -88,12 +98,11 @@ namespace LabSheet3
 
         public void Withdraw(double amount)
         {
-            if(amount <= Balance)
+            if (amount <= Balance)
                 Balance -= amount;
             else
                 Console.WriteLine("Insufficient Funds.");
 
         }
-
     }
 }
