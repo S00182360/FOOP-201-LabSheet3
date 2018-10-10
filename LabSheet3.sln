@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFlight", "TestFlight\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCashRegister", "TestCashRegister\TestCashRegister.csproj", "{0B56B8D9-98CD-4ECB-B675-8367FC3F4D76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Querstion3", "Querstion3\Querstion3.csproj", "{1186ED2D-A857-4BDC-BF70-7C52ECFF0620}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{0B56B8D9-98CD-4ECB-B675-8367FC3F4D76}.Debug|x86.Build.0 = Debug|x86
 		{0B56B8D9-98CD-4ECB-B675-8367FC3F4D76}.Release|x86.ActiveCfg = Release|x86
 		{0B56B8D9-98CD-4ECB-B675-8367FC3F4D76}.Release|x86.Build.0 = Release|x86
+		{1186ED2D-A857-4BDC-BF70-7C52ECFF0620}.Debug|x86.ActiveCfg = Debug|x86
+		{1186ED2D-A857-4BDC-BF70-7C52ECFF0620}.Debug|x86.Build.0 = Debug|x86
+		{1186ED2D-A857-4BDC-BF70-7C52ECFF0620}.Release|x86.ActiveCfg = Release|x86
+		{1186ED2D-A857-4BDC-BF70-7C52ECFF0620}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
